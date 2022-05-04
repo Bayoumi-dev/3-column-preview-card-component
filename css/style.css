@@ -1,0 +1,53 @@
+/* Google Font - Lexend Deca */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+/* Google Font - Big Shoulders Display */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+/* Variables */
+:root {
+  /* Colors - Primary */
+  --colors-bright-orange: hsl(31, 77%, 52%);
+  --colors-dark-cyan: hsl(184, 100%, 22%);
+  --colors-very-dark-cyan: hsl(179, 100%, 13%);
+  /* Colors - Neutral */
+  --colors-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --colors-light-gray: hsl(0, 0%, 95%);
+  /* Fonts */
+  --fonts-main: "Lexend Deca", sans-serif;
+  --fonts-hd: 'Big Shoulders Display', cursive;
+}
+/* Global Rules  */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 15px;
+}
+body {
+  font-family: var(--fonts-main);
+  cursor: default;
+}
+
+/* Reset Some Elements */
+button {
+  color: inherit;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Centering component */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 6px;
+  background-color: var(--colors-light-gray);
+}
