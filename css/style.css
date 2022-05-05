@@ -1,7 +1,7 @@
 /* Google Font - Lexend Deca */
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 /* Google Font - Big Shoulders Display */
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
 
 /* Variables */
 :root {
@@ -14,7 +14,7 @@
   --colors-light-gray: hsl(0, 0%, 95%);
   /* Fonts */
   --fonts-main: "Lexend Deca", sans-serif;
-  --fonts-hd: 'Big Shoulders Display', cursive;
+  --fonts-hd: "Big Shoulders Display", cursive;
 }
 /* Global Rules  */
 *,
@@ -32,7 +32,10 @@ body {
   font-family: var(--fonts-main);
   cursor: default;
 }
-
+h1 {
+  position: absolute;
+  opacity: 0;
+}
 /* Reset Some Elements */
 button {
   color: inherit;
@@ -48,6 +51,90 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 6px;
+  padding: 24px;
   background-color: var(--colors-light-gray);
+}
+
+/* 3-column preview card component */
+.preview-cards__container {
+  display: flex;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  overflow: hidden;
+}
+.preview-card {
+  max-width: 307px;
+  min-height: 500px;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+}
+.preview-card.sedans {
+  background-color: var(--colors-bright-orange);
+}
+.preview-card.suvs {
+  background-color: var(--colors-dark-cyan);
+}
+.preview-card.luxury {
+  background-color: var(--colors-very-dark-cyan);
+}
+.preview-card__icon {
+}
+.preview-card h2 {
+  font-size: 2.667rem;
+  font-family: var(--fonts-hd);
+  text-transform: uppercase;
+  color: var(--colors-light-gray);
+  margin: 35px 0 25px;
+}
+.preview-card p {
+  line-height: 1.667;
+  color: var(--colors-transparent-white);
+}
+.preview-cards__btn {
+  width: 146px;
+  height: 48px;
+  font-size: 1rem;
+  margin-top: auto;
+  background-color: var(--colors-light-gray);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+}
+.preview-cards__btn:hover {
+  background-color: transparent;
+  color: white !important;
+  border: 2px solid white;
+}
+.preview-cards__btn.sedans-btn {
+  color: var(--colors-bright-orange);
+}
+.preview-cards__btn.suvs-btn {
+  color: var(--colors-dark-cyan);
+}
+.preview-cards__btn.luxury-btn {
+  color: var(--colors-very-dark-cyan);
+}
+@media (max-width: 992px) {
+  .preview-cards__container {
+    flex-direction: column;
+  }
+  .preview-card {
+    max-width: 327px;
+    min-height: 442px;
+    padding: 48px;
+  }
+  .preview-cards__btn {
+    margin-top: 24px;
+  }
 }
