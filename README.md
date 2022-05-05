@@ -23,4 +23,3 @@ This is a solution to the [3-column preview card component challenge on Frontend
 ## Author
 - Website - [bayoumi.dev](https://bayoumi.dev)
 - Frontend Mentor - @Bayoumi-dev
-
