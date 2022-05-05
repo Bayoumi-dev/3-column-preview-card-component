@@ -193,3 +193,17 @@ main {
     left: 0;
   }
 }
+
+/* Footer */
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 6px 0;
+  color: var(--colorsvery--dark-cyan);
+}
+footer a {
+  color: var(--colors-dark-cyan);
+}
+footer a:hover {
+  color: var(--colors-bright-orange);
+}
