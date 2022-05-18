@@ -39,6 +39,7 @@ h1 {
 /* Reset Some Elements */
 button {
   color: inherit;
+  font-family: inherit;
   border: none;
   outline: none;
   background-color: transparent;
